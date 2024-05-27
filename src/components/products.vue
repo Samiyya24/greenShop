@@ -1,29 +1,89 @@
 <script>
 import Product from "./product.vue";
 export default {
+  data() {
+    return {
+      products: [
+        {
+          img: "/imgs/product4.png",
+          title: "Barberton Daisy",
+          price: "$119.00",
+          sale: false,
+        },
+        {
+          img: "/imgs/product5.png",
+          title: "Angel Wing Begonia",
+          price: "$169.00",
+          sale: false,
+        },
+        {
+          img: "/imgs/product6.png",
+          title: "African Violet",
+          price: "$199.00",
+          sale: true,
+        },
+        {
+          img: "/imgs/product2.png",
+          title: "Beach Spider Lily",
+          price: "$129.00",
+          sale: false,
+        },
+
+        {
+          img: "/imgs/product1.png",
+          title: "Blushing Bromeliad",
+          price: "$139.00",
+          sale: false,
+        },
+        {
+          img: "/imgs/product3.png",
+          title: "Aluminum Plant",
+          price: "$179.00",
+          sale: false,
+        },
+        {
+          img: "/imgs/product7.png",
+          title: "Bird's Nest Fern",
+          price: "$99.00",
+          sale: false,
+        },
+        {
+          img: "/imgs/product8.png",
+          title: "Broadleaf Lady Palm",
+          price: "$59.00",
+          sale: false,
+        },
+        {
+          img: "/imgs/product9.png",
+          title: "Chinese Evergreen",
+          price: "$39.00",
+        },
+      ],
+      title: "Products Title",
+    };
+  },
   components: { Product },
-  data() {},
 };
 </script>
 <template>
   <div class="w-full">
     <div class="flex items-center justify-between mb-10">
       <div class="gap-20">
-        <a
-          href="#AllPlants"
+        <button
           class="border-b-4 pb-6 border-b-white focus:border-b-[#46A358] px-2 hover:border-b-[#46A358]"
-          >All Plants</a
         >
-        <a
-          href="#NewArrivals"
+          All Plants
+        </button>
+        <button
           class="border-b-4 pb-6 border-b-white focus:border-b-[#46A358] px-2 hover:border-b-[#46A358]"
-          >New Arrivals</a
         >
-        <a
-          href="#Sale"
+          New Arrivals
+        </button>
+        <button
           class="border-b-4 pb-6 border-b-white focus:border-b-[#46A358] px-2 hover:border-b-[#46A358]"
-          >Sale</a
         >
+          Sale
+        </button>
       </div>
       <div class="flex gap-3">
         <p>Short by:</p>
@@ -48,7 +108,11 @@ export default {
         </button>
       </div>
     </div>
-    <Product class="" />
+    <div class="grid grid-cols-3 gap-8">
+      <template v-for="(product, index) in products" :key="index">
+        <Product :product="product" :title="title" />
+      </template>
+    </div>
     <div class="mt-20 flex justify-end gap-2.5">
       <button
         class="px-2.5 border hover:text-white focus:text-white border-[#E5E5E5] text-lg hover:font-bold hover:bg-[#46A358] focus:bg-[#46A358] rounded-md"

@@ -7,6 +7,11 @@ export default {
   computed: {
     ...mapGetters(["cartCount"]),
   },
+  data() {
+    return {
+      isModal: false,
+    };
+  },
 };
 </script>
 
@@ -54,6 +59,7 @@ export default {
           >
         </div>
         <button
+          @click="isModal = true"
           class="bg-[#46A358] text-white flex items-center px-4 py-1 gap-1 rounded-lg"
         >
           <img src="/public/icons/Logout.svg" alt="" />
@@ -61,7 +67,7 @@ export default {
         </button>
       </div>
     </nav>
-    <Login />
+    <Login v-if="isModal" @close="isModal = false" />
     <Slide />
   </div>
 </template>

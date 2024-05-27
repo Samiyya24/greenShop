@@ -1,24 +1,29 @@
 <template>
-  <div class="bg-black/40 fixed top-0 left-0 w-full h-screen z-10"></div>
+  <div
+    @click="closeModal"
+    class="bg-black/40 fixed top-0 left-0 w-full h-screen z-10"
+  ></div>
   <div
     class="fixed top-1/2 left-1/2 z-20 -translate-x-1/2 -translate-y-1/2 bg-white border-b-8 border-b-[#46A358] py-10 px-28"
   >
-    <div class="flex justify-end">
-      <svg
-        class="mb-5"
-        width="12"
-        height="12"
-        viewBox="0 0 12 12"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M0.170067 0.170067C0.396823 -0.056689 0.764467 -0.056689 0.991223 0.170067L6 5.17884L11.0088 0.170067C11.2355 -0.056689 11.6032 -0.056689 11.8299 0.170067C12.0567 0.396823 12.0567 0.764467 11.8299 0.991223L6.82116 6L11.8299 11.0088C12.0567 11.2355 12.0567 11.6032 11.8299 11.8299C11.6032 12.0567 11.2355 12.0567 11.0088 11.8299L6 6.82116L0.991223 11.8299C0.764467 12.0567 0.396823 12.0567 0.170067 11.8299C-0.056689 11.6032 -0.056689 11.2355 0.170067 11.0088L5.17884 6L0.170067 0.991223C-0.056689 0.764467 -0.056689 0.396823 0.170067 0.170067Z"
-          fill="#46A358"
-        />
-      </svg>
+    <div class="flex justify-end absolute top-5 right-5">
+      <button @click="closeModal">
+        <svg
+          class="mb-5"
+          width="12"
+          height="12"
+          viewBox="0 0 12 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0.170067 0.170067C0.396823 -0.056689 0.764467 -0.056689 0.991223 0.170067L6 5.17884L11.0088 0.170067C11.2355 -0.056689 11.6032 -0.056689 11.8299 0.170067C12.0567 0.396823 12.0567 0.764467 11.8299 0.991223L6.82116 6L11.8299 11.0088C12.0567 11.2355 12.0567 11.6032 11.8299 11.8299C11.6032 12.0567 11.2355 12.0567 11.0088 11.8299L6 6.82116L0.991223 11.8299C0.764467 12.0567 0.396823 12.0567 0.170067 11.8299C-0.056689 11.6032 -0.056689 11.2355 0.170067 11.0088L5.17884 6L0.170067 0.991223C-0.056689 0.764467 -0.056689 0.396823 0.170067 0.170067Z"
+            fill="#46A358"
+          />
+        </svg>
+      </button>
     </div>
     <div class="divide-x text-center mb-10">
       <button
@@ -36,8 +41,6 @@
     </div>
     <!-- ==============================LOGIN============================ -->
     <div v-if="content == 'login'">
-      <h1>login</h1>
-
       <p class="text-[#3D3D3D] text-sm mb-3">
         Enter your username and password to login.
       </p>
@@ -146,8 +149,6 @@
     </div>
     <!-- ==============================REGISTER============================ -->
     <div v-if="content == 'register'">
-      <h1>register</h1>
-
       <p class="text-[#3D3D3D] text-sm mb-3">
         Enter your username and password to login.
       </p>
@@ -271,6 +272,11 @@ export default {
     return {
       content: "login",
     };
+  },
+  methods: {
+    closeModal() {
+      this.$emit("close");
+    },
   },
 };
 </script>
