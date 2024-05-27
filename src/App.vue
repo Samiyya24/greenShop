@@ -18,7 +18,7 @@ import Header from "./components/header.vue";
 // import HeaderSlide from "./components/headerSlide.vue";
 import Categories from "./components/categories.vue";
 import Products from "./components/products.vue";
-import Product from "./components/product.vue";
+import Product from "./components/Product.vue";
 import Trend from "./components/trend.vue";
 import BlogPost from "./components/blogPost.vue";
 import Footer from "./components/footer.vue";
