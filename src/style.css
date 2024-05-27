@@ -57,3 +57,13 @@
   height: 100px;
   width: 250px;
 }
+
+/* =========================Toogle============================ */
+.active {
+  right: 0;
+  transition: 0.8s;
+}
+
+.close {
+  display: none;
+}
