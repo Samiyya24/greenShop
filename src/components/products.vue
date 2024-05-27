@@ -1,9 +1,11 @@
 <script>
-import Product from "./product.vue";
+import Product from "./Product.vue"; // to'g'ri import qiling
+
 export default {
   data() {
     return {
       products: [
+        // Ma'lumotlar ro'yxati
         {
           img: "/imgs/product4.png",
           title: "Barberton Daisy",
@@ -28,7 +30,6 @@ export default {
           price: "$129.00",
           sale: false,
         },
-
         {
           img: "/imgs/product1.png",
           title: "Blushing Bromeliad",
@@ -57,19 +58,42 @@ export default {
           img: "/imgs/product9.png",
           title: "Chinese Evergreen",
           price: "$39.00",
+          sale: false,
         },
       ],
-      title: "Products Title",
+      filteredProducts: [], // Boshida bo'sh array
+      showAll: true, // Boshida barcha mahsulotlarni ko'rsatish
     };
   },
-  components: { Product },
+  components: {
+    Product,
+  },
+  methods: {
+    showAllProducts() {
+      this.showAll = true;
+    },
+    showSaleProducts() {
+      this.showAll = false;
+    },
+  },
+  computed: {
+    productsToDisplay() {
+      if (this.showAll) {
+        return this.products;
+      } else {
+        return this.products.filter((product) => product.sale);
+      }
+    },
+  },
 };
 </script>
+
 <template>
   <div class="w-full">
     <div class="flex items-center justify-between mb-10">
       <div class="gap-20">
         <button
+          @click="showAllProducts"
           class="border-b-4 pb-6 border-b-white focus:border-b-[#46A358] px-2 hover:border-b-[#46A358]"
         >
           All Plants
@@ -80,13 +104,14 @@ export default {
           New Arrivals
         </button>
         <button
+          @click="showSaleProducts"
           class="border-b-4 pb-6 border-b-white focus:border-b-[#46A358] px-2 hover:border-b-[#46A358]"
         >
           Sale
         </button>
       </div>
       <div class="flex gap-3">
-        <p>Short by:</p>
+        <p>Sort by:</p>
         <button class="flex items-center">
           Default sorting
           <svg
@@ -109,9 +134,11 @@ export default {
       </div>
     </div>
     <div class="grid grid-cols-3 gap-8">
-      <template v-for="(product, index) in products" :key="index">
-        <Product :product="product" :title="title" />
-      </template>
+      <Product
+        v-for="(product, index) in productsToDisplay"
+        :key="index"
+        :product="product"
+      />
     </div>
     <div class="mt-20 flex justify-end gap-2.5">
       <button
