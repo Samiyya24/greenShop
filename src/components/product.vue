@@ -4,9 +4,6 @@ export default {
     product: {
       type: Object,
     },
-    title: {
-      type: String,
-    },
   },
   methods: {
     addToCart() {
@@ -16,9 +13,8 @@ export default {
 };
 </script>
 <template>
-  <h1>{{ title }}</h1>
   <div>
-    <div class="bg-red-500">
+    <div class="">
       <div class="group">
         <div class="relative mb-10">
           <span
