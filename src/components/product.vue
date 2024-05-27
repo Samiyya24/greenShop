@@ -37,6 +37,14 @@ export default {
       ],
     };
   },
+  //   const toggle = () => {
+  //   show.value = !show.value;
+  // };
+  methods: {
+    addToCart() {
+      this.$store.dispatch("addToCart");
+    },
+  },
 };
 </script>
 
@@ -57,7 +65,11 @@ export default {
               class="w-full hover:border-t-2 border-green-300 bg-white"
             />
             <div class="gap-x-7 absolute left-16 hidden group-hover:flex">
-              <img src="../../public/icons/cart.svg" alt="" />
+              <img
+                @click="addToCart"
+                src="../../public/icons/cart.svg"
+                alt=""
+              />
               <img src="../../public/icons/heart.svg" alt="" />
               <img src="../../public/icons/search.svg" alt="" />
             </div>
@@ -79,6 +91,4 @@ export default {
   </div>
 </template>
 
-<style scoped>
-/* Qo'shimcha uslublar */
-</style>
+<style scoped></style>

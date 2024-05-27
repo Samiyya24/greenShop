@@ -1,8 +1,11 @@
 <script>
 import Slide from "./slide.vue";
-
+import { mapGetters } from "vuex";
 export default {
   components: { Slide },
+  computed: {
+    ...mapGetters(["cartCount"]),
+  },
 };
 </script>
 
@@ -42,7 +45,14 @@ export default {
       </ul>
       <div class="flex items-center gap-8">
         <img src="/public/icons/search.svg" alt="" />
-        <svg
+        <div class="relative">
+          <img src="/public/icons/cart.svg" alt="" />
+          <span
+            class="absolute top-0 bg-[#46A358] text-white rounded-full px-1 left-4 text-[10px]"
+            >{{ cartCount }}</span
+          >
+        </div>
+        <!-- <svg
           width="31"
           height="24"
           viewBox="0 0 31 24"
@@ -65,7 +75,7 @@ export default {
             d="M25.121 8.83C25.121 7.58 24.101 6.62 22.951 6.62C22.841 6.62 22.751 6.63 22.661 6.65L24.251 4.4H23.001L21.351 6.73C21.121 7.06 20.951 7.31 20.841 7.49C20.731 7.67 20.641 7.87 20.561 8.1C20.491 8.32 20.451 8.56 20.451 8.82C20.421 10.12 21.531 11.13 22.781 11.11C24.041 11.11 25.121 10.12 25.121 8.83ZM24.071 8.83C24.071 9.2 23.941 9.52 23.691 9.77C23.441 10.02 23.141 10.14 22.781 10.14C22.411 10.14 22.111 10.02 21.861 9.77C21.611 9.52 21.491 9.2 21.491 8.83C21.491 8.46 21.611 8.15 21.861 7.9C22.111 7.65 22.411 7.52 22.781 7.52C23.141 7.52 23.441 7.65 23.691 7.9C23.941 8.15 24.071 8.46 24.071 8.83Z"
             fill="white"
           />
-        </svg>
+        </svg> -->
 
         <button
           class="bg-[#46A358] text-white flex items-center px-4 py-1 gap-1 rounded-lg"
