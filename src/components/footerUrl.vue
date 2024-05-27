@@ -2,72 +2,116 @@
   <div class="container mx-auto">
     <div class="flex justify-between border-b py-5">
       <ul>
-        <li class="mb-2"><h1 class="text-lg font-bold">My Account</h1></li>
         <li class="mb-2">
-          <a class="text-sm text-[#3D3D3D]" href="#">My Account</a>
+          <h1 class="text-lg font-bold">My Account</h1>
         </li>
         <li class="mb-2">
-          <a class="text-sm text-[#3D3D3D]" href="#">Our stores</a>
+          <a class="text-sm hover:text-[#46A358] text-[#3D3D3D]" href="#"
+            >My Account</a
+          >
         </li>
         <li class="mb-2">
-          <a class="text-sm text-[#3D3D3D]" href="#">Contact us</a>
+          <a class="text-sm hover:text-[#46A358] text-[#3D3D3D]" href="#"
+            >Our stores</a
+          >
         </li>
         <li class="mb-2">
-          <a class="text-sm text-[#3D3D3D]" href="#">Career</a>
+          <a class="text-sm hover:text-[#46A358] text-[#3D3D3D]" href="#"
+            >Contact us</a
+          >
         </li>
         <li class="mb-2">
-          <a class="text-sm text-[#3D3D3D]" href="#">Specials</a>
+          <a class="text-sm hover:text-[#46A358] text-[#3D3D3D]" href="#"
+            >Career</a
+          >
+        </li>
+        <li class="mb-2">
+          <a class="text-sm hover:text-[#46A358] text-[#3D3D3D]" href="#"
+            >Specials</a
+          >
         </li>
       </ul>
       <ul>
         <li class="mb-2"><h1 class="text-lg font-bold">Help & Guide</h1></li>
         <li class="mb-2">
-          <a class="text-sm text-[#3D3D3D]" href="#">Help Center</a>
+          <a class="text-sm text-[#3D3D3D] hover:text-[#46A358]" href="#"
+            >Help Center</a
+          >
         </li>
         <li class="mb-2">
-          <a class="text-sm text-[#3D3D3D]" href="#">How to Buy</a>
+          <a class="text-sm text-[#3D3D3D] hover:text-[#46A358]" href="#"
+            >How to Buy</a
+          >
         </li>
         <li class="mb-2">
-          <a class="text-sm text-[#3D3D3D]" href="#">Shipping & Delivery</a>
+          <a class="text-sm text-[#3D3D3D] hover:text-[#46A358]" href="#"
+            >Shipping & Delivery</a
+          >
         </li>
         <li class="mb-2">
-          <a class="text-sm text-[#3D3D3D]" href="#">Product Policy</a>
+          <a class="text-sm text-[#3D3D3D] hover:text-[#46A358]" href="#"
+            >Product Policy</a
+          >
         </li>
         <li class="mb-2">
-          <a class="text-sm text-[#3D3D3D]" href="#">How to Return</a>
+          <a class="text-sm text-[#3D3D3D] hover:text-[#46A358]" href="#"
+            >How to Return</a
+          >
         </li>
       </ul>
       <ul>
         <li class="mb-2"><h1 class="text-lg font-bold">Categories</h1></li>
         <li class="mb-2">
-          <a class="text-sm text-[#3D3D3D]" href="#">House Plants</a>
+          <a class="text-sm text-[#3D3D3D] hover:text-[#46A358]" href="#"
+            >House Plants</a
+          >
         </li>
         <li class="mb-2">
-          <a class="text-sm text-[#3D3D3D]" href="#">Potter Plants</a>
+          <a class="text-sm text-[#3D3D3D] hover:text-[#46A358]" href="#"
+            >Potter Plants</a
+          >
         </li>
         <li class="mb-2">
-          <a class="text-sm text-[#3D3D3D]" href="#">Seeds</a>
+          <a class="text-sm text-[#3D3D3D] hover:text-[#46A358]" href="#"
+            >Seeds</a
+          >
         </li>
         <li class="mb-2">
-          <a class="text-sm text-[#3D3D3D]" href="#">Small Plants</a>
+          <a class="text-sm text-[#3D3D3D] hover:text-[#46A358]" href="#"
+            >Small Plants</a
+          >
         </li>
         <li class="mb-2">
-          <a class="text-sm text-[#3D3D3D]" href="#">Accessories</a>
+          <a class="text-sm text-[#3D3D3D] hover:text-[#46A358]" href="#"
+            >Accessories</a
+          >
         </li>
       </ul>
       <div>
         <h1 class="text-lg font-bold mb-3">Social Media</h1>
         <div class="flex gap-3 mb-5">
-          <img class="border p-1 rounded-md" src="/icons/Twitter.svg" alt="" />
           <img
-            class="border p-1 rounded-md"
+            class="border hover:border-[#46A35899] p-1 rounded-md"
+            src="/icons/Twitter.svg"
+            alt=""
+          />
+          <img
+            class="border hover:border-[#46A35899] p-1 rounded-md"
             src="/icons/Instagram.svg"
             alt=""
           />
-          <img class="border p-1 rounded-md" src="/icons/Linkedin.svg" alt="" />
-          <img class="border p-1 rounded-md" src="/icons/Union.svg" alt="" />
           <img
-            class="border py-1 px-2 rounded-md"
+            class="border hover:border-[#46A35899] p-1 rounded-md"
+            src="/icons/Linkedin.svg"
+            alt=""
+          />
+          <img
+            class="border hover:border-[#46A35899] p-1 rounded-md"
+            src="/icons/Union.svg"
+            alt=""
+          />
+          <img
+            class="border hover:border-[#46A35899] py-1 px-2 rounded-md hover:fill-black"
             src="/icons/Facebook.svg"
             alt=""
           />

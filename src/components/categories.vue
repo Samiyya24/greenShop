@@ -24,7 +24,6 @@ export default {
 </script>
 <template>
   <div class="items-center text-left max-w-sm px-10">
-    <h1 class="text-lg font-bold mb-5 mt-5">Categories</h1>
     <div class="py-3">
       <h3 class="text-[18px] font-bold py-3">Categories</h3>
       <div
@@ -52,7 +51,7 @@ export default {
         Price: <span class="text-[#46A358] font-semibold">$39 - $1230</span>
       </p>
       <button
-        class="bg-[#46A358] text-white flex items-center px-4 py-1 gap-1 rounded-lg font-bold"
+        class="hover:bg-[#46A358] border border-[#46A358] hover:text-white text-[#46A358] flex items-center px-4 py-1 gap-1 rounded-lg font-bold"
       >
         Filter
       </button>
@@ -70,7 +69,7 @@ export default {
         ({{ size.count }})
       </p>
     </div>
-    <img src="/imgs/SuperSaleBanner.png" alt="" />
+    <img class="mt-16" src="/imgs/SuperSaleBanner.png" alt="" />
   </div>
 </template>
 <style></style>

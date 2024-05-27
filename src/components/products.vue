@@ -8,20 +8,20 @@ export default {
 <template>
   <div class="w-full">
     <div class="flex items-center justify-between mb-10">
-      <div class="gap-12">
+      <div class="gap-20">
         <a
           href="#AllPlants"
-          class="relative px-4 py-2 text-gray-800 after:content-[''] after:absolute after:w-full after:h-1 after:bg-green-500 after:left-0 after:-bottom-5 hover:font-bold after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 ease-in-out active:after:scale-x-100"
+          class="border-b-4 pb-6 border-b-white focus:border-b-[#46A358] px-2 hover:border-b-[#46A358]"
           >All Plants</a
         >
         <a
           href="#NewArrivals"
-          class="relative px-4 py-2 text-gray-800 after:content-[''] after:absolute after:w-full after:h-1 after:bg-green-500 after:left-0 after:-bottom-5 hover:font-bold after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 ease-in-out active:after:scale-x-100"
+          class="border-b-4 pb-6 border-b-white focus:border-b-[#46A358] px-2 hover:border-b-[#46A358]"
           >New Arrivals</a
         >
         <a
           href="#Sale"
-          class="relative px-4 py-2 text-gray-800 after:content-[''] after:absolute after:w-full after:h-1 after:bg-green-500 after:left-0 after:-bottom-5 hover:font-bold after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 ease-in-out active:after:scale-x-100"
+          class="border-b-4 pb-6 border-b-white focus:border-b-[#46A358] px-2 hover:border-b-[#46A358]"
           >Sale</a
         >
       </div>
@@ -51,27 +51,27 @@ export default {
     <Product class="" />
     <div class="mt-20 flex justify-end gap-2.5">
       <button
-        class="px-2.5 border hover:text-white border-[#E5E5E5] text-lg hover:font-bold hover:bg-[#46A358] rounded-md"
+        class="px-2.5 border hover:text-white focus:text-white border-[#E5E5E5] text-lg hover:font-bold hover:bg-[#46A358] focus:bg-[#46A358] rounded-md"
       >
         1
       </button>
       <button
-        class="px-2.5 border hover:text-white border-[#E5E5E5] text-lg hover:font-bold hover:bg-[#46A358] rounded-md"
+        class="px-2.5 border hover:text-white focus:text-white border-[#E5E5E5] text-lg hover:font-bold hover:bg-[#46A358] focus:bg-[#46A358] rounded-md"
       >
         2
       </button>
       <button
-        class="px-2.5 border hover:text-white border-[#E5E5E5] text-lg hover:font-bold hover:bg-[#46A358] rounded-md"
+        class="px-2.5 border hover:text-white focus:text-white border-[#E5E5E5] text-lg hover:font-bold hover:bg-[#46A358] focus:bg-[#46A358] rounded-md"
       >
         3
       </button>
       <button
-        class="px-2.5 border hover:text-white border-[#E5E5E5] text-lg hover:font-bold hover:bg-[#46A358] rounded-md"
+        class="px-2.5 border hover:text-white focus:text-white border-[#E5E5E5] text-lg hover:font-bold hover:bg-[#46A358] focus:bg-[#46A358] rounded-md"
       >
         4
       </button>
       <button
-        class="p-2.5 border hover:text-white border-[#E5E5E5] text-lg hover:font-bold hover:bg-[#46A358] rounded-md"
+        class="p-2.5 border hover:text-white focus:text-white border-[#E5E5E5] text-lg hover:font-bold hover:bg-[#46A358] focus:bg-[#46A358] rounded-md"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

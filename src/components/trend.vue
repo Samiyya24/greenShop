@@ -13,10 +13,11 @@
           </h1>
           <p class="text-sm text-[#727272] mb-3 max-w-72">{{ trend.info }}</p>
           <button
-            class="bg-[#46A358] text-white text-sm font-medium flex itemms-center py-2.5 px-8 rounded-md ml-36"
+            class="group hover:bg-[#46A358] border border-[#46A358] hover:text-white text-[#46A358] text-sm font-medium flex items-center gap-2 py-2.5 px-8 rounded-md ml-36"
           >
             Find More
             <svg
+              class="fill-[#46A358] group-hover:fill-white"
               width="18"
               height="18"
               viewBox="0 0 18 18"
@@ -24,6 +25,7 @@
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
+                class="stroke-[#46A358] group-hover:stroke-white"
                 d="M14.8126 8.79419H3.56258"
                 stroke="white"
                 stroke-width="1.5"
@@ -31,6 +33,7 @@
                 stroke-linejoin="round"
               />
               <path
+                class="stroke-[#46A358] group-hover:stroke-white"
                 d="M10.2748 4.27587C10.2748 4.27587 14.8123 6.72162 14.8123 8.79312C14.8123 10.8661 10.2748 13.3126 10.2748 13.3126"
                 stroke="white"
                 stroke-width="1.5"

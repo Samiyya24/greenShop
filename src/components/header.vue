@@ -18,28 +18,28 @@ export default {
         <li>
           <a
             href="#home"
-            class="relative px-4 py-2 text-gray-800 after:content-[''] after:absolute after:w-full after:h-1 after:bg-green-500 after:left-0 after:-bottom-5 hover:font-bold after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 ease-in-out active:after:scale-x-100"
+            class="border-b-4 pb-6 border-b-white focus:border-b-[#46A358] px-2 hover:border-b-[#46A358]"
             >Home</a
           >
         </li>
         <li>
           <a
             href="#shop"
-            class="relative px-4 py-2 text-gray-800 after:content-[''] after:absolute after:w-full after:h-1 after:bg-green-500 after:left-0 after:-bottom-5 hover:font-bold after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 ease-in-out"
+            class="border-b-4 pb-6 border-b-white focus:border-b-[#46A358] px-2 hover:border-b-[#46A358]"
             >Shop</a
           >
         </li>
         <li>
           <a
             href="#plant-care"
-            class="relative px-4 py-2 text-gray-800 after:content-[''] after:absolute after:w-full after:h-1 after:bg-green-500 after:left-0 after:-bottom-5 hover:font-bold after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 ease-in-out"
+            class="border-b-4 pb-6 border-b-white focus:border-b-[#46A358] px-2 hover:border-b-[#46A358]"
             >Plant Care</a
           >
         </li>
         <li>
           <a
             href="#blogs"
-            class="relative px-4 py-2 text-gray-800 after:content-[''] after:absolute after:w-full after:h-1 after:bg-green-500 after:left-0 after:-bottom-5 hover:font-bold after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 ease-in-out"
+            class="border-b-4 pb-6 border-b-white focus:border-b-[#46A358] px-2 hover:border-b-[#46A358]"
             >Blogs</a
           >
         </li>

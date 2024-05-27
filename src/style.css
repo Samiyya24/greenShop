@@ -67,3 +67,7 @@
 .close {
   display: none;
 }
+
+button{
+  cursor: pointer;
+}
