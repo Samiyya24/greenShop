@@ -3,7 +3,7 @@
     <Header />
     <div class="container mx-auto">
       <div class="grid grid-cols-4 gap-x-7">
-        <Categories class="max-w-screen-md col-span-1" />
+        <Categories class="max-w-screen-md col-span-1 max-md:hidden" />
         <Products class="col-span-3" />
       </div>
     </div>

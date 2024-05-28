@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="flex items-center">
+    <div class="flex max-md:flex-col items-center text-center">
       <div class="">
-        <p class="text-sm uppercase tracking-widest font-medium text-[#3D3D3D]">
+        <p class="text-sm uppercase tracking-widest font-medium text-[#3D3D3D] max-md:font-bold max-md:text-xl max-md:underline underline-offset-4">
           Welcome to GreenShop
         </p>
-        <h1 class="text-7xl font-bold text-gray-900 my-4 max-w-[500px]">
+        <h1 class="md:text-7xl font-bold text-gray-900 my-4 max-w-[500px]">
           Let’s Make a Better <span class="text-[#46A358]">Planet</span>
         </h1>
         <p class="text-[#727272] mb-4 max-w-[620px]">
@@ -14,7 +14,7 @@
           favorite plants!
         </p>
         <button
-          class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition duration-300"
+          class="bg-green-500 text-white md:px-6 px-2 md:py-3 py-2 max-md:text-xs rounded-lg hover:bg-green-600 transition duration-300"
         >
           SHOP NOW
         </button>

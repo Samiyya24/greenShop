@@ -6,7 +6,9 @@
         Our Blog Posts We are an online plant shop offering a wide range of
         cheap and trendy plants.
       </p>
-      <div class="flex items-center justify-between">
+      <div
+        class="flex max-md:flex-col items-center max-md:gap-6 md:justify-between"
+      >
         <div v-for="(blog, index) in posts" key="index" class="text-left">
           <img :src="blog.img" alt="" />
           <div class="p-2 bg-[#FBFBFB]">
@@ -17,7 +19,7 @@
             <p class="text-sm text-[#727272] max-w-60 leading-5 mt-2">
               {{ blog.info }}
             </p>
-            <button class="flex gap-2 items-center mt-2">
+            <button class="flex gap-2 items-center mt-2 hover:underline">
               Read More
               <svg
                 width="12"

@@ -4,7 +4,7 @@
     class="bg-black/40 fixed top-0 left-0 w-full h-screen z-10"
   ></div>
   <div
-    class="fixed top-1/2 left-1/2 z-20 -translate-x-1/2 -translate-y-1/2 bg-white border-b-8 border-b-[#46A358] py-10 px-28"
+    class="fixed md:top-1/2 md:left-1/2 z-20 rounded-xl md:-translate-x-1/2 md:-translate-y-1/2 bg-white border-b-8 border-b-[#46A358] md:py-10 md:px-28 px-2 py-3"
   >
     <div class="flex justify-end absolute top-5 right-5">
       <button @click="closeModal">
@@ -25,16 +25,16 @@
         </svg>
       </button>
     </div>
-    <div class="divide-x text-center mb-10">
+    <div class="divide-x text-center md:mb-10 mb-3">
       <button
         @click="content = 'login'"
-        class="px-5 text-xl font-medium focus:text-[#46A358]"
+        class="md:px-5 px-2 text-xl font-medium focus:text-[#46A358]"
       >
         Login
       </button>
       <button
         @click="content = 'register'"
-        class="px-5 text-xl font-medium focus:text-[#46A358]"
+        class="md:px-5 px-2 text-xl font-medium focus:text-[#46A358]"
       >
         Register
       </button>
@@ -51,7 +51,7 @@
           placeholder="almamun_uxui@outlook.com"
         />
         <!-- <div class="max-w-full"> -->
-       <div class="w-full relative">
+        <div class="w-full relative">
           <input
             class="w-full border border-[#EAEAEA] py-3 px-4 rounded-md mb-4 focus:border-[#46A358] focus:outline-none"
             :type="show ? 'text' : 'password'"

@@ -28,12 +28,15 @@
 
 import { Swiper, SwiperSlide } from "swiper/vue";
 import Intro from "./Intro.vue";
+// Import Swiper styles
 import "swiper/css";
 
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+// import required modules
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
+// const modules = ref([Pagination, ]);
 
 export default {
   components: {

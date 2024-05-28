@@ -1,19 +1,19 @@
 <template>
   <div class="container">
-    <div class="flex justify-between mt-20">
+    <div class="flex max-md:flex-col md:justify-between max-md:gap-5 items-start mt-20">
       <div
         v-for="(trend, index) in trend"
         key="index"
-        class="flex items-center"
+        class="flex flex-col md:flex-row md:gap-0 items-center gap-3"
       >
-        <img :src="trend.img" alt="" />
-        <div class="text-end">
-          <h1 class="text-lg font-black uppercase mb-1 max-w-40 ml-32">
+        <img :src="trend.img" class="max-w-48" alt="" />
+        <div class="flex flex-col md:items-end md:text-end items-center">
+          <h1 class="text-lg font-black uppercase mb-1 max-w-40">
             {{ trend.header }}
           </h1>
           <p class="text-sm text-[#727272] mb-3 max-w-72">{{ trend.info }}</p>
           <button
-            class="group hover:bg-[#46A358] border border-[#46A358] hover:text-white text-[#46A358] text-sm font-medium flex items-center gap-2 py-2.5 px-8 rounded-md ml-36"
+            class="group w-2/3 hover:bg-[#46A358] border border-[#46A358] hover:text-white text-[#46A358] text-sm font-medium flex items-center gap-2 py-2.5 px-8 rounded-md"
           >
             Find More
             <svg

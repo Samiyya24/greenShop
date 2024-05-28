@@ -1,7 +1,7 @@
 <template>
   <div class="bg-green-100/30 py-6 border">
     <div class="container">
-      <div class="flex items-center justify-between">
+      <div class="flex max-md:flex-col max-md:gap-3  items-start   md:justify-between">
         <img src="/icons/greenShopLogo.svg" alt="" />
         <div class="flex items-center gap-3">
           <img src="/icons/Location.svg" alt="" />

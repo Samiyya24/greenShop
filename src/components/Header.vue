@@ -19,7 +19,7 @@ export default {
   <div class="container mx-auto">
     <nav class="flex justify-between items-center py-5 border-b">
       <img src="/icons/greenShopLogo.svg" alt="" />
-      <ul class="flex items-start gap-12">
+      <ul class="hidden md:flex items-start gap-12">
         <li>
           <a
             href="#home"
@@ -50,13 +50,15 @@ export default {
         </li>
       </ul>
       <div class="flex items-center gap-8">
-        <img src="/icons/search.svg" alt="" />
-        <div class="relative">
-          <img src="/icons/cart.svg" alt="" />
-          <span
-            class="absolute top-0 bg-[#46A358] text-white rounded-full px-1 left-4 text-[10px]"
-            >{{ cartCount }}</span
-          >
+        <div class="hidden md:flex gap-5">
+          <img src="/icons/search.svg" alt="" />
+          <div class="relative">
+            <img src="/icons/cart.svg" alt="" />
+            <span
+              class="absolute top-0 bg-[#46A358] text-white rounded-full px-1 left-4 text-[10px]"
+              >{{ cartCount }}</span
+            >
+          </div>
         </div>
         <button
           @click="isModal = true"
@@ -68,6 +70,6 @@ export default {
       </div>
     </nav>
     <Login v-if="isModal" @close="isModal = false" />
-    <Slide  />
+    <Slide />
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto">
-    <div class="flex justify-between border-b py-5">
+    <div class="grid grid-cols-2 md:grid-cols-4 border-b py-5">
       <ul>
         <li class="mb-2">
           <h1 class="text-lg font-bold">My Account</h1>

@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto mt-28">
-    <div class="flex justify-between py-5 items-center">
+    <div class="grid grid-cols-2 max-md:gap-4 md:grid-cols-4 py-5">
       <div class="">
         <img src="/icons/img1.svg" alt="" />
         <h2 class="text-lg font-bold">Garden Care</h2>
@@ -17,7 +17,9 @@
           plants.
         </p>
       </div>
-      <div class="">
+      <div
+        class="max-md:col-span-2 max-md:flex max-md:flex-col items-center max-md:text-center"
+      >
         <img src="/icons/img3.svg" alt="" />
         <h2 class="text-lg font-bold">Watering Graden</h2>
         <p class="text-[#727272] text-sm max-w-52">
@@ -25,7 +27,7 @@
           plants.
         </p>
       </div>
-      <div class="max-w-96">
+      <div class="max-md:col-span-2 md:max-w-96">
         <h1 class="text-lg font-bold mb-2">
           Would you like to join newsletters?
         </h1>

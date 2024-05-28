@@ -116,7 +116,7 @@ export default {
           Sale
         </button>
       </div>
-      <div class="flex gap-3">
+      <div class="hidden md:flex gap-3">
         <p>Sort by:</p>
         <select id="cars" class="focus:outline-none">
           <option value="name">All</option>
@@ -125,7 +125,7 @@ export default {
         </select>
       </div>
     </div>
-    <div class="grid grid-cols-3 gap-8">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
       <Product
         v-for="(product, index) in productsToDisplay"
         :key="index"
