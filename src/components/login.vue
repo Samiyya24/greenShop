@@ -51,11 +51,53 @@
           placeholder="almamun_uxui@outlook.com"
         />
         <!-- <div class="max-w-full"> -->
-        <input
-          class="border border-[#EAEAEA] py-3 px-4 rounded-md mb-4 focus:border-[#46A358] focus:outline-none"
-          type="password"
-          placeholder="password"
-        />
+       <div class="w-full relative">
+          <input
+            class="w-full border border-[#EAEAEA] py-3 px-4 rounded-md mb-4 focus:border-[#46A358] focus:outline-none"
+            :type="show ? 'text' : 'password'"
+            placeholder="Password"
+          />
+          <button
+            v-if="!show"
+            @click="showPassword"
+            class="absolute top-4 right-4"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M5.45 16.92a10.78 10.78 0 0 1-2.55-3.71a1.85 1.85 0 0 1 0-1.46A10.59 10.59 0 0 1 6.62 7.1A9 9 0 0 1 12 5.48a8.81 8.81 0 0 1 4 .85m2.56 1.72a10.85 10.85 0 0 1 2.54 3.7a1.85 1.85 0 0 1 0 1.46a10.59 10.59 0 0 1-3.72 4.65A9 9 0 0 1 12 19.48a8.81 8.81 0 0 1-4-.85"
+                />
+                <path
+                  d="M8.71 13.65a3.28 3.28 0 0 1-.21-1.17a3.5 3.5 0 0 1 3.5-3.5c.4-.002.796.07 1.17.21m2.12 2.12c.14.374.212.77.21 1.17a3.5 3.5 0 0 1-3.5 3.5a3.28 3.28 0 0 1-1.17-.21M3 20L19 4"
+                />
+              </g>
+            </svg>
+          </button>
+          <button v-else @click="showPassword" class="absolute top-4 right-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 256 256"
+            >
+              <path
+                fill="currentColor"
+                d="M245.48 125.57c-.34-.78-8.66-19.23-27.24-37.81C201 70.54 171.38 50 128 50S55 70.54 37.76 87.76c-18.58 18.58-26.9 37-27.24 37.81a6 6 0 0 0 0 4.88c.34.77 8.66 19.22 27.24 37.8C55 185.47 84.62 206 128 206s73-20.53 90.24-37.75c18.58-18.58 26.9-37 27.24-37.8a6 6 0 0 0 0-4.88M128 194c-31.38 0-58.78-11.42-81.45-33.93A134.8 134.8 0 0 1 22.69 128a134.6 134.6 0 0 1 23.86-32.06C69.22 73.42 96.62 62 128 62s58.78 11.42 81.45 33.94A134.6 134.6 0 0 1 233.31 128C226.94 140.21 195 194 128 194m0-112a46 46 0 1 0 46 46a46.06 46.06 0 0 0-46-46m0 80a34 34 0 1 1 34-34a34 34 0 0 1-34 34"
+              />
+            </svg>
+          </button>
+        </div>
         <!-- <svg
         class="absolute top-20 right-3"
         xmlns="http://www.w3.org/2000/svg"
@@ -152,10 +194,9 @@
       <p class="text-[#3D3D3D] text-sm mb-3">
         Enter your username and password to login.
       </p>
-      <form action="/" class="flex flex-col relative mb-12">
+      <form action="/" class="flex flex-col mb-12">
         <input
           class="border border-[#EAEAEA] py-3 px-4 rounded-md mb-4 focus:border-[#46A358] focus:outline-none"
-          type="text"
           placeholder="Username"
         />
         <!-- <div class="max-w-full"> -->
@@ -164,28 +205,59 @@
           type="email"
           placeholder="Enter your email address"
         />
-        <input
-          class="border border-[#EAEAEA] py-3 px-4 rounded-md mb-4 focus:border-[#46A358] focus:outline-none"
-          type="password"
-          placeholder="Password"
-        />
+        <div class="w-full relative">
+          <input
+            class="w-full border border-[#EAEAEA] py-3 px-4 rounded-md mb-4 focus:border-[#46A358] focus:outline-none"
+            :type="show ? 'text' : 'password'"
+            placeholder="Password"
+          />
+          <button
+            v-if="!show"
+            @click="showPassword"
+            class="absolute top-4 right-4"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M5.45 16.92a10.78 10.78 0 0 1-2.55-3.71a1.85 1.85 0 0 1 0-1.46A10.59 10.59 0 0 1 6.62 7.1A9 9 0 0 1 12 5.48a8.81 8.81 0 0 1 4 .85m2.56 1.72a10.85 10.85 0 0 1 2.54 3.7a1.85 1.85 0 0 1 0 1.46a10.59 10.59 0 0 1-3.72 4.65A9 9 0 0 1 12 19.48a8.81 8.81 0 0 1-4-.85"
+                />
+                <path
+                  d="M8.71 13.65a3.28 3.28 0 0 1-.21-1.17a3.5 3.5 0 0 1 3.5-3.5c.4-.002.796.07 1.17.21m2.12 2.12c.14.374.212.77.21 1.17a3.5 3.5 0 0 1-3.5 3.5a3.28 3.28 0 0 1-1.17-.21M3 20L19 4"
+                />
+              </g>
+            </svg>
+          </button>
+          <button v-else @click="showPassword" class="absolute top-4 right-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 256 256"
+            >
+              <path
+                fill="currentColor"
+                d="M245.48 125.57c-.34-.78-8.66-19.23-27.24-37.81C201 70.54 171.38 50 128 50S55 70.54 37.76 87.76c-18.58 18.58-26.9 37-27.24 37.81a6 6 0 0 0 0 4.88c.34.77 8.66 19.22 27.24 37.8C55 185.47 84.62 206 128 206s73-20.53 90.24-37.75c18.58-18.58 26.9-37 27.24-37.8a6 6 0 0 0 0-4.88M128 194c-31.38 0-58.78-11.42-81.45-33.93A134.8 134.8 0 0 1 22.69 128a134.6 134.6 0 0 1 23.86-32.06C69.22 73.42 96.62 62 128 62s58.78 11.42 81.45 33.94A134.6 134.6 0 0 1 233.31 128C226.94 140.21 195 194 128 194m0-112a46 46 0 1 0 46 46a46.06 46.06 0 0 0-46-46m0 80a34 34 0 1 1 34-34a34 34 0 0 1-34 34"
+              />
+            </svg>
+          </button>
+        </div>
         <input
           class="border border-[#EAEAEA] py-3 px-4 rounded-md mb-4 focus:border-[#46A358] focus:outline-none"
           type="password"
           placeholder="Confirm Password"
         />
-        <!-- <svg
-        class="absolute top-20 right-3"
-        xmlns="http://www.w3.org/2000/svg"
-        width="1em"
-        height="1em"
-        viewBox="0 0 256 256"
-      >
-        <path
-          fill="currentColor"
-          d="M245.48 125.57c-.34-.78-8.66-19.23-27.24-37.81C201 70.54 171.38 50 128 50S55 70.54 37.76 87.76c-18.58 18.58-26.9 37-27.24 37.81a6 6 0 0 0 0 4.88c.34.77 8.66 19.22 27.24 37.8C55 185.47 84.62 206 128 206s73-20.53 90.24-37.75c18.58-18.58 26.9-37 27.24-37.8a6 6 0 0 0 0-4.88M128 194c-31.38 0-58.78-11.42-81.45-33.93A134.8 134.8 0 0 1 22.69 128a134.6 134.6 0 0 1 23.86-32.06C69.22 73.42 96.62 62 128 62s58.78 11.42 81.45 33.94A134.6 134.6 0 0 1 233.31 128C226.94 140.21 195 194 128 194m0-112a46 46 0 1 0 46 46a46.06 46.06 0 0 0-46-46m0 80a34 34 0 1 1 34-34a34 34 0 0 1-34 34"
-        />
-      </svg> -->
+
         <!-- </div> -->
 
         <button
@@ -271,11 +343,16 @@ export default {
   data() {
     return {
       content: "login",
+      show: false,
     };
   },
   methods: {
     closeModal() {
       this.$emit("close");
+    },
+    showPassword() {
+      console.log("++++");
+      this.show = !this.show;
     },
   },
 };
