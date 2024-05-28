@@ -28,13 +28,13 @@
     <div class="divide-x text-center mb-10">
       <button
         @click="content = 'login'"
-        class="px-5 text-xl font-medium hover:text-[#46A358]"
+        class="px-5 text-xl font-medium focus:text-[#46A358]"
       >
         Login
       </button>
       <button
         @click="content = 'register'"
-        class="px-5 text-xl font-medium hover:text-[#46A358]"
+        class="px-5 text-xl font-medium focus:text-[#46A358]"
       >
         Register
       </button>
