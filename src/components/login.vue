@@ -47,13 +47,13 @@
       <form action="/" class="flex flex-col relative mb-12">
         <input
           class="border border-[#EAEAEA] py-3 px-4 rounded-md mb-4 focus:border-[#46A358] focus:outline-none"
-          type="text"
+          type="email"
           placeholder="almamun_uxui@outlook.com"
         />
         <!-- <div class="max-w-full"> -->
         <input
           class="border border-[#EAEAEA] py-3 px-4 rounded-md mb-4 focus:border-[#46A358] focus:outline-none"
-          type="text"
+          type="password"
           placeholder="password"
         />
         <!-- <svg
@@ -161,17 +161,17 @@
         <!-- <div class="max-w-full"> -->
         <input
           class="border border-[#EAEAEA] py-3 px-4 rounded-md mb-4 focus:border-[#46A358] focus:outline-none"
-          type="text"
+          type="email"
           placeholder="Enter your email address"
         />
         <input
           class="border border-[#EAEAEA] py-3 px-4 rounded-md mb-4 focus:border-[#46A358] focus:outline-none"
-          type="text"
+          type="password"
           placeholder="Password"
         />
         <input
           class="border border-[#EAEAEA] py-3 px-4 rounded-md mb-4 focus:border-[#46A358] focus:outline-none"
-          type="text"
+          type="password"
           placeholder="Confirm Password"
         />
         <!-- <svg

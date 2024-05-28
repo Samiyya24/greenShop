@@ -1,5 +1,5 @@
 <script>
-import Product from "./Product.vue"; // to'g'ri import qiling
+import Product from "./Product.vue"; 
 
 export default {
   data() {
