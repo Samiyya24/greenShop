@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="flex max-md:flex-col md:justify-between max-md:gap-5 items-start mt-20">
+    <div class="flex max-md:flex-col md:justify-between  max-md:gap-5 items-center mt-20">
       <div
         v-for="(trend, index) in trend"
         key="index"

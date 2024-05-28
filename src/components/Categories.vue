@@ -20,16 +20,27 @@ export default {
       ],
     };
   },
+  props: {
+    isSidebarOpen: {
+      type: Boolean,
+      required: true,
+    },
+  },
 };
 </script>
 <template>
-  <div class="items-center text-left max-w-sm px-10">
+ 
+  <div
+    v-if="isSidebarOpen"
+    style="transition: 0.8s"
+    class="items-center text-left max-w-sm px-10 md:bg-slate-100/70 bg-slate-100 max-md:py-2 max-md:fixed z-10 top-20"
+  >
     <div class="py-3">
-      <h3 class="text-[18px] font-bold py-3">Categories</h3>
+      <h3 class="text-[18px] font-bold md:py-3">Categories</h3>
       <div
         v-for="(category, index) in categories"
         :key="index"
-        class="group flex justify-between ml-3 gap-5 py-[10px] leading-8"
+        class="group flex justify-between ml-3 gap-5 md:py-[10px] leading-8"
       >
         <a class="group-hover:font-bold group-hover:text-[#46A358]" href="#">{{
           category.name
@@ -60,7 +71,7 @@ export default {
     <div
       v-for="(size, index) in size"
       :key="index"
-      class="group leading-8 flex justify-between ml-3 gap-5 py-[10px]"
+      class="group leading-8 flex justify-between ml-3 gap-5 md:py-[10px]"
     >
       <a class="group-hover:font-bold group-hover:text-[#46A358]" href="#">{{
         size.name
@@ -69,7 +80,7 @@ export default {
         ({{ size.count }})
       </p>
     </div>
-    <img class="mt-16" src="/imgs/SuperSaleBanner.png" alt="" />
+    <img class="mt-16 max-md:hidden" src="/imgs/SuperSaleBanner.png" alt="" />
   </div>
 </template>
 <style></style>

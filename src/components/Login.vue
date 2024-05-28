@@ -1,10 +1,10 @@
 <template>
   <div
     @click="closeModal"
-    class="bg-black/40 fixed top-0 left-0 w-full h-screen z-10"
+    class="bg-black/40 fixed top-0 left-0 w-full h-screen z-30"
   ></div>
   <div
-    class="fixed md:top-1/2 md:left-1/2 z-20 rounded-xl md:-translate-x-1/2 md:-translate-y-1/2 bg-white border-b-8 border-b-[#46A358] md:py-10 md:px-28 px-2 py-3"
+    class="fixed md:top-1/2 top-20 md:left-1/2 z-40 rounded-xl md:-translate-x-1/2 md:-translate-y-1/2 bg-white border-b-8 border-b-[#46A358] md:py-10 md:px-28 px-2 py-3"
   >
     <div class="flex justify-end absolute top-5 right-5">
       <button @click="closeModal">

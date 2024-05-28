@@ -125,7 +125,7 @@ export default {
         </select>
       </div>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-8 ml-5">
       <Product
         v-for="(product, index) in productsToDisplay"
         :key="index"

@@ -1,9 +1,12 @@
 <template>
   <div>
-    <Header />
+    <Header :isSidebarOpen="isSidebarOpen" @toggle-sidebar="toggleSidebar" />
     <div class="container mx-auto">
-      <div class="grid grid-cols-4 gap-x-7">
-        <Categories class="max-w-screen-md col-span-1 max-md:hidden" />
+      <div class="md:grid grid-cols-4 gap-x-7">
+        <Categories
+          :isSidebarOpen="isSidebarOpen"
+          class="max-w-screen-md col-span-1"
+        />
         <Products class="col-span-3" />
       </div>
     </div>
@@ -35,7 +38,14 @@ export default {
     Footer,
   },
   data() {
-    return {};
+    return {
+      isSidebarOpen: false,
+    };
+  },
+  methods: {
+    toggleSidebar() {
+      this.isSidebarOpen = !this.isSidebarOpen;
+    },
   },
 };
 </script>

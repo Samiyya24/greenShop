@@ -1,14 +1,16 @@
 <template>
   <div>
-    <div class="flex max-md:flex-col items-center text-center">
+    <div class="flex max-md:flex-col items-center max-md:text-center">
       <div class="">
-        <p class="text-sm uppercase tracking-widest font-medium text-[#3D3D3D] max-md:font-bold max-md:text-xl max-md:underline underline-offset-4">
+        <p
+          class="text-sm uppercase tracking-widest font-medium text-[#3D3D3D] max-md:font-bold max-md:text-xl max-md:underline underline-offset-4"
+        >
           Welcome to GreenShop
         </p>
-        <h1 class="md:text-7xl font-bold text-gray-900 my-4 max-w-[500px]">
+        <h1 class="md:text-7xl max-md:text-xl font-bold text-gray-900 my-4 max-w-[500px]">
           Let’s Make a Better <span class="text-[#46A358]">Planet</span>
         </h1>
-        <p class="text-[#727272] mb-4 max-w-[620px]">
+        <p class="text-[#727272] max-md:text-xs mb-4 max-w-[620px]">
           We are an online plant shop offering a wide range of cheap and trendy
           plants. Use our plants to create an unique Urban Jungle. Order your
           favorite plants!

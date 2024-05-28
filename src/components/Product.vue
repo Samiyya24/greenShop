@@ -27,8 +27,9 @@ export default {
             alt=""
             class="w-full border-t-2 border-white md:hover:border-green-300 bg-white"
           />
+        
           <div
-            class="gap-x-7 absolute md:left-16 md:hidden flex max-md:group-hover:flex"
+            class="gap-x-7 absolute flex md:hidden md:left-16 md:group-hover:flex"
           >
             <img
               class="max-md:w-2/12"
