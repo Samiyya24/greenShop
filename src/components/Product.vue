@@ -28,9 +28,9 @@ export default {
             class="w-full border-t-2 border-white hover:border-green-300 bg-white"
           />
           <div class="gap-x-7 absolute left-16 hidden group-hover:flex">
-            <img @click="addToCart" src="../../public/icons/cart.svg" alt="" />
-            <img src="../../public/icons/heart.svg" alt="" />
-            <img src="../../public/icons/search.svg" alt="" />
+            <img @click="addToCart" src="/icons/cart.svg" alt="" />
+            <img src="/icons/heart.svg" alt="" />
+            <img src="/icons/search.svg" alt="" />
           </div>
         </div>
         <h2 class="text-base">{{ product.title }}</h2>

@@ -55,8 +55,8 @@
 </template>
 
 <script>
-import FooterAddress from "./footerAddress.vue";
-import FooterUrl from "./footerUrl.vue";
+import FooterAddress from "./FooterAddress.vue";
+import FooterUrl from "./FooterUrl.vue";
 
 export default {
   components: { FooterAddress, FooterUrl },
