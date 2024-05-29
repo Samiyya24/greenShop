@@ -67,10 +67,10 @@ export default {
 			v-for="(size, index) in size"
 			:key="index"
 			class="group leading-8 flex justify-between ml-3 gap-5 md:py-[10px]">
-			<a class="group-hover:font-bold group-hover:text-[#46A358]" href="#">{{
+			<a class="font-bold group-hover:text-[#46A358]" href="#">{{
 				size.name
 			}}</a>
-			<p class="group-hover:font-bold group-hover:text-[#46A358]">
+			<p class="font-bold group-hover:text-[#46A358]">
 				({{ size.count }})
 			</p>
 		</div>
