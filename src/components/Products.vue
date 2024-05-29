@@ -219,6 +219,6 @@ export default {
           </g>
         </svg>
       </button>
-    </div>3.0
+    </div>  
   </div>
 </template>
