@@ -19,7 +19,7 @@
             <p class="text-sm text-[#727272] max-w-60 leading-5 mt-2">
               {{ blog.info }}
             </p>
-            <button class="flex gap-2 items-center mt-2 hover:underline">
+            <button class="flex gap-2 items-center mt-2 hover:underline max-md::underline">
               Read More
               <svg
                 width="12"
