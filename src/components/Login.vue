@@ -1,3 +1,21 @@
+<script>
+export default {
+	data() {
+		return {
+			content: 'login',
+			show: false,
+		};
+	},
+	methods: {
+		closeModal() {
+			this.$emit('close');
+		},
+		showPassword() {
+			this.show = !this.show;
+		},
+	},
+};
+</script>
 <template>
 	<div
 		@click="closeModal"
@@ -290,23 +308,6 @@
 	</div>
 </template>
 
-<script>
-export default {
-	data() {
-		return {
-			content: 'login',
-			show: false,
-		};
-	},
-	methods: {
-		closeModal() {
-			this.$emit('close');
-		},
-		showPassword() {
-			this.show = !this.show;
-		},
-	},
-};
-</script>
+
 
 <style lang="scss" scoped></style>

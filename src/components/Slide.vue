@@ -1,14 +1,14 @@
 <template>
   <swiper
-    :slidesPerView="1"
-    :spaceBetween="3"
+    :slides-per-view="1"
+    :space-between="3"
     :loop="true"
     :autoplay="{
       delay: 2500,
-      disableOnInteraction: false,
+      disableOnInteraction: false
     }"
     :pagination="{
-      clickable: true,
+      clickable: true
     }"
     :modules="modules"
     :navigation="true"
@@ -17,40 +17,23 @@
     <swiper-slide><Intro /></swiper-slide>
     <swiper-slide><Intro /></swiper-slide>
     <swiper-slide><Intro /></swiper-slide>
-    <swiper-slide><Intro /></swiper-slide>
-    <swiper-slide><Intro /></swiper-slide>
-    <swiper-slide><Intro /></swiper-slide>
-    <swiper-slide><Intro /></swiper-slide>
-    <swiper-slide><Intro /></swiper-slide>
   </swiper>
 </template>
-<script>
 
-import { Swiper, SwiperSlide } from "swiper/vue";
-import Intro from "./Intro.vue";
-// Import Swiper styles
-import "swiper/css";
 
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+<script setup>
+import { ref } from 'vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import Intro from './Intro.vue';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 
-// import required modules
-import { Pagination, Autoplay, Navigation } from "swiper/modules";
-// const modules = ref([Pagination, ]);
-
-export default {
-  components: {
-    Swiper,
-    SwiperSlide,
-    Intro,
-  },
-  setup() {
-    return {
-      modules: [Pagination, Autoplay, Navigation],
-    };
-  },
-};
+const modules = ref([Pagination, Autoplay, Navigation]);
 </script>
+
+
 <style>
 @import "swiper/swiper-bundle.css";
 

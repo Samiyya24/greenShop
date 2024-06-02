@@ -1,32 +1,27 @@
-<script>
-export default {
-  data() {
-    return {
-      categories: [
-        { name: "House Plants", count: 33 },
-        { name: "Potter Plants", count: 12 },
-        { name: "Seeds", count: 65 },
-        { name: "Small Plants", count: 39 },
-        { name: "Big Plants", count: 23 },
-        { name: "Succulents", count: 17 },
-        { name: "Trerrariums", count: 19 },
-        { name: "Gardening", count: 13 },
-        { name: "Accessories", count: 18 },
-      ],
-      size: [
-        { name: "Small", count: 119 },
-        { name: "Medium", count: 86 },
-        { name: "Large", count: 78 },
-      ],
-    };
+<script setup>
+import { reactive } from "vue";
+const categories = reactive([
+  { name: "House Plants", count: 33 },
+  { name: "Potter Plants", count: 12 },
+  { name: "Seeds", count: 65 },
+  { name: "Small Plants", count: 39 },
+  { name: "Big Plants", count: 23 },
+  { name: "Succulents", count: 17 },
+  { name: "Trerrariums", count: 19 },
+  { name: "Gardening", count: 13 },
+  { name: "Accessories", count: 18 },
+]);
+const size = reactive([
+  { name: "Small", count: 119 },
+  { name: "Medium", count: 86 },
+  { name: "Large", count: 78 },
+]);
+const props = defineProps({
+  isSidebarOpen: {
+    type: Boolean,
+    required: true,
   },
-  props: {
-    isSidebarOpen: {
-      type: Boolean,
-      required: true,
-    },
-  },
-};
+});
 </script>
 <template>
   <div

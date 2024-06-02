@@ -1,61 +1,7 @@
 <template>
-  <div>
-    <Header :isSidebarOpen="isSidebarOpen" @toggle-sidebar="toggleSidebar" />
-    <div class="container mx-auto mt-16">
-      <div class="grid-cols-4 md:grid gap-x-7">
-        <Categories
-          :is-sidebar-open="isLargeScreen"
-          class="max-w-screen-md col-span-1"
-        />
-        <Products class="col-span-3" />
-        <Categories
-          :isSidebarOpen="isSidebarOpen"
-          class="max-w-screen-md col-span-1"
-        />
-      </div>
-    </div>
-    <Trend />
-    <BlogPost />
-    <Footer />
-  </div>
+  <RouterView />
 </template>
 
-<script>
-import { useMediaQuery } from "@vueuse/core";
-
-import Header from "./components/Header.vue";
-// import HeaderSlide from "./components/headerSlide.vue";
-import Categories from "./components/Categories.vue";
-import Products from "./components/Products.vue";
-import Product from "./components/Product.vue";
-import Trend from "./components/Trend.vue";
-import BlogPost from "./components/BlogPost.vue";
-import Footer from "./components/Footer.vue";
-// import Intro from "./components/Intro.vue";
-
-export default {
-  components: {
-    Header,
-    // HeaderSlide,
-    Categories,
-    Products,
-    Product,
-    Trend,
-    BlogPost,
-    Footer,
-  },
-  data() {
-    return {
-      isSidebarOpen: false,
-      isLargeScreen: useMediaQuery("(min-width: 768px)"),
-    };
-  },
-  methods: {
-    toggleSidebar() {
-      this.isSidebarOpen = !this.isSidebarOpen;
-    },
-  },
-};
+<script setup>
+import { RouterView } from "vue-router";
 </script>
-
-<style lang="scss" scoped></style>

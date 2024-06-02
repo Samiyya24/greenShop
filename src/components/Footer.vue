@@ -56,16 +56,9 @@
   <FooterUrl />
 </template>
 
-<script>
+<script setup>
 import FooterAddress from "./FooterAddress.vue";
 import FooterUrl from "./FooterUrl.vue";
-
-export default {
-  components: { FooterAddress, FooterUrl },
-  data() {
-    return {};
-  },
-};
 </script>
 
 <style lang="scss" scoped></style>
